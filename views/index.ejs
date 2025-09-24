@@ -3,75 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arkhadia é um universo digital para gamers: jogos, comunidade, marketplace e novas experiências.">
   <title>Arkhadia</title>
-  <link rel="stylesheet" href="/css/estilo.css">
 </head>
 <body>
+  <%- include('partials/header', {title: 'Início'}); %>
 
-<!-- Banner com degradê -->
-<header class="banner">
-  <h1>ARKHADIA</h1>
-  <nav>
-    <a href="/jogos">jogos</a>
-    <a href="/marketplace">marketplace</a>
-    <a href="/comunidade">comunidade</a>
-  </nav>
-</header>
+  <main>
 
-<main>
+    <!-- Sessão de boas-vindas -->
+    <section class="intro">
+      <div class="intro-text">
+        <h2><strong>BEM-VINDOS</strong></h2>
+        <p>Arkhadia é um universo digital para quem vive e respira jogos. Aqui você encontra diversão, conexão e novas experiências.</p>
+      </div>
+    </section>
 
-  <!-- Sessão de boas-vindas -->
-  <section class="intro">
-    <div class="intro-text">
-      <h2><strong>BEM-VINDOS</strong></h2>
-      <p>Arkhadia é um universo digital para quem vive e respira jogos. Aqui você encontra diversão, conexão e novas experiências.</p>
-    </div>
-  </section>
+    <!-- Seções ZigZag -->
+    <section class="zigzag">
+      <div class="text">
+        <h3>🎮 Explore Mundos Fantásticos</h3>
+        <p>Descubra universos únicos criados por jogadores e desenvolvedores independentes.</p>
+      </div>
+      <div class="image">
+        <img src="/images/jogo1.jpg" alt="Cenário de um jogo com mundos fantásticos">
+      </div>
+    </section>
 
-  <!-- Seções ZigZag -->
-  <section class="zigzag">
-    <div class="text">
-      <h3>🎮 Explore Mundos Fantásticos</h3>
-      <p>Descubra universos únicos criados por jogadores e desenvolvedores independentes.</p>
-    </div>
-    <div class="image">
-      <img src="/img/jogo1.jpg" alt="Mundo Fantástico">
-    </div>
-  </section>
+    <section class="zigzag reverse">
+      <div class="text">
+        <h3>🛒 Marketplace de Itens</h3>
+        <p>Compre, venda e troque itens digitais únicos, skins e acessórios raros.</p>
+      </div>
+      <div class="image">
+        <img src="/images/marketplace.jpg" alt="Marketplace de itens digitais e skins">
+      </div>
+    </section>
 
-  <section class="zigzag reverse">
-    <div class="text">
-      <h3>🛒 Marketplace de Itens</h3>
-      <p>Compre, venda e troque itens digitais únicos, skins e acessórios raros.</p>
-    </div>
-    <div class="image">
-      <img src="/img/marketplace.jpg" alt="Marketplace">
-    </div>
-  </section>
+    <section class="zigzag">
+      <div class="text">
+        <h3>💬 Comunidade Ativa</h3>
+        <p>Participe de fóruns, eventos e votações. Sua voz molda o futuro da plataforma.</p>
+      </div>
+      <div class="image">
+        <img src="/images/comunidade.jpg" alt="Grupo de jogadores interagindo na comunidade">
+      </div>
+    </section>
 
-  <section class="zigzag">
-    <div class="text">
-      <h3>💬 Comunidade Ativa</h3>
-      <p>Participe de fóruns, eventos e votações. Sua voz molda o futuro da plataforma.</p>
-    </div>
-    <div class="image">
-      <img src="/img/comunidade.jpg" alt="Comunidade">
-    </div>
-  </section>
+    <section class="zigzag reverse">
+      <div class="text">
+        <h3>📈 Evolução Constante</h3>
+        <p>Atualizações frequentes, novos jogos e experiências exclusivas para os membros.</p>
+      </div>
+      <div class="image">
+        <img src="/images/evolucao.jpg" alt="Gráfico representando evolução e progresso da plataforma">
+      </div>
+    </section>
 
-  <section class="zigzag reverse">
-    <div class="text">
-      <h3>📈 Evolução Constante</h3>
-      <p>Atualizações frequentes, novos jogos e experiências exclusivas para os membros.</p>
-    </div>
-    <div class="image">
-      <img src="/img/evolucao.jpg" alt="Evolução">
-    </div>
-  </section>
+  </main>
 
-</main>
-
-<footer>© 2025 Arkhadia - Todos os direitos reservados</footer>
+  <footer>
+    © 2025 Arkhadia - Todos os direitos reservados
+  </footer>
 
 </body>
 </html>
