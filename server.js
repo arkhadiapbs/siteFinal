@@ -1,7 +1,11 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const rotas = require("./routes/routes");
+const jogos = require("./routes/jogos");
+const Marketplace = require("./routes/Marketplace");
+const Comunidade = require("./routes/Comunidade");
+const Home = require("./routes/home")
+
 
 // Servir arquivos estáticos (CSS, imagens, etc.)
 app.use(express.static(path.join(__dirname, "public")));
@@ -14,7 +18,11 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 // Rotas
-app.use("/", rotas);
+app.use("/Jogos", jogos);
+app.use("/", Home);
+app.use("/Marketplace", Marketplace);
+app.use("/Comunidade", Comunidade);
+
 
 // Página 404
 app.use((req, res) => {

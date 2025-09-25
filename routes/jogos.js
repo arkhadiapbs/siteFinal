@@ -9,9 +9,8 @@ const candidatos = [
   "Final Fantasy XVI"
 ];
 
-router.get("/", (req, res) => res.render("index"));
-
-router.get("/jogos", (req, res) => {
+// ✅ Esta é a única rota GET que você precisa
+router.get("/", (req, res) => {
   const top10Ano = [
     "The Legend of Zelda: Breath of the Wild",
     "Elden Ring",
@@ -38,9 +37,10 @@ router.get("/jogos", (req, res) => {
     "Roblox"
   ];
 
-  res.render("jogos", { top10Ano, maisJogados, candidatos });
+  res.render("pages/jogos", { top10Ano, maisJogados, candidatos });
 });
 
+// API de votação
 router.post("/api/voto", express.json(), (req, res) => {
   const ip = req.ip;
   const { jogo, justificativa } = req.body;
